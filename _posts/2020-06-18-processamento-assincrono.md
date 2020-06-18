@@ -6,16 +6,20 @@ tags: programacao linguagens
 
 # Processamento Assíncrono e Java
 
+* [Threads](#threads)
+* [Processamento Síncrono](#sync)
+* [Processamento Assíncrono](#async)
+
 Saber como utilizar todo recurso disponível de uma máquina é importante para que uma aplicação possa processar requisições mais rapidamente e, principalmente, escalar quando necessário.  
 Antes de entender como aproveitar 100% dos recursos, é importante saber diferenciar processamentos *Síncrono* e  *Assíncrono*, *Concorrência* e *Paralelismo*. Nesse primeiro post eu vou falar sobre processamentos síncrono e assíncrono, que talvez sejam os mais importantes de saber no início.
 
-## Threads
+## Threads <a name="threads"></a>
 
 Threads são linhas de instruções utilizadas pelo processador para rodar diferentes programas. Quando você abre o aplicativo do Spotify e o Google Chrome ao mesmo tempo, esses dois programas estão rodando em Threads diferentes, e um não vai interferir no funcionamento do outro.
 
 Todo programa Java é processado na Thread principal, chamada **main**. Essa Thread é criada automaticamente pela JVM quando o programa começa a rodar.
 
-## Processamentos Síncrono
+## Processamentos Síncrono <a name="sync"></a>
 
 Imagina que você entre numa cafeteria e peça um café e um milk shake. O atendente então pega põe o pó na cafeteira, esquenta a água, pega uma xícara, espera que o café fique pronto e chama seu nome. Então ele pega o leite, sorvete, põe no liquidificador, prepara o seu milk shake e chama novamente o seu nome.  
 Assim funciona o processamento **síncrono**, no qual uma coisa ocorre depois da outra, como numa fila.
@@ -63,7 +67,7 @@ public static void main(String[] args) throws InterruptedException {
 > Tempo de espera: 2.015 segundos
 ```
 
-## Processamentos Assíncrono
+## Processamentos Assíncrono <a name="async"></a>
 
 Neste método de processamento, um atendente faria o seu milk shake enquanto outro faria o seu café. Um processo não interferiria no outro, e os dois seriam feitos ao mesmo tempo. No fim, o seu nome seria chamado apenas uma vez, e as duas bebidas seriam servidas ao mesmo tempo.  
 
