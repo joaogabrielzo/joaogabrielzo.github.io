@@ -26,13 +26,13 @@ Assim funciona o processamento **síncrono**, no qual uma coisa ocorre depois da
 
 Em Java, é apenas um programa normal, lido de cima a baixo.
 Então se eu tenho uma classe `Cafeteria`, com um método para fazer o pedido: 
-```Java
+```
 public class CafeteriaSync {
 
     public void fazerPedido(String pedido, String atendente) throws InterruptedException {
         System.out.println("O atendente " + atendente + " está preparando o seu " + pedido);
 
-        -- O sleep substitui o processo de preparação do pedido.
+        // O sleep substitui o processo de preparação do pedido.
         Thread.sleep(1000);
 
         System.out.println("O atendente " + atendente + " finalizou o seu " + pedido);
@@ -42,7 +42,7 @@ public class CafeteriaSync {
 
 Na hora de chamar esse método com meus dois pedidos, todo o processo vai acontecer na thread principal, e o tempo de espera será de 2 segundos, pois o programa inteiro será lido de cima a baixo.
 
-```Java
+```
 public static void main(String[] args) throws InterruptedException {
 
     long start = System.currentTimeMillis();
@@ -75,7 +75,7 @@ O processamento assíncrono é utilizado apenas quando uma tarefa de **I/O**(Inp
 
 Nesse exemplo, a classe `Cafeteria` precisará implementar a interface `Runnable`. Ela possui apenas um método chamado `run()`, que é responsável por possibilitar o processo em uma thread diferente.
 
-```Java
+```
 public class CafeteriaAsync implements Runnable {
 
     private String pedido;
@@ -104,7 +104,7 @@ public class CafeteriaAsync implements Runnable {
 &nbsp;
 Para poder processar um pedido numa thread diferente, é preciso instanciar um objeto **Thread**, que aceita um objeto da classe **Runnable** e uma `String`, que será o nome da nova Thread, como argumentos.
 
-```Java
+```
 public static void main(String[] args) {
 
     long start = System.currentTimeMillis();
