@@ -32,7 +32,7 @@ public class CafeteriaSync {
     public void fazerPedido(String pedido, String atendente) throws InterruptedException {
         System.out.println("O atendente " + atendente + " está preparando o seu " + pedido);
 
-        // O sleep substitui o processo de preparação do pedido.
+        - O sleep substitui o processo de preparação do pedido.
         Thread.sleep(1000);
 
         System.out.println("O atendente " + atendente + " finalizou o seu " + pedido);
@@ -115,8 +115,8 @@ public static void main(String[] args) {
     Thread pedidoCafe = new Thread(cafe, "Thread-1");
     Thread pedidoMilkShake = new Thread(milkShake, "Thread-2");
 
-    pedidoMilkShake.start(); // O método start() inicia uma nova Thread.
-    pedidoCafe.run(); // O método run() processa o pedido na Thread main
+    pedidoMilkShake.start(); - O método start() inicia uma nova Thread.
+    pedidoCafe.run(); - O método run() processa o pedido na Thread main
 
 
     long end = System.currentTimeMillis();
