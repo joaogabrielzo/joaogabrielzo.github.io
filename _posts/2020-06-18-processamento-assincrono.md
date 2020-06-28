@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Processamento Assíncrono e Java"
-tags: programacao linguagens
+tags: computação linguagens
 ---
 
 # Processamento Assíncrono e Java
