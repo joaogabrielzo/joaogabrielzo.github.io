@@ -25,7 +25,7 @@ Existem 2 formas básicas de se guardar vários itens, que serão abordadas no t
 
 ## Array<a name="array"></a>
 &nbsp;
-<div style="text-align:center"><img src="./img/array-in-memory.png" width=450/></div>
+<div style="text-align:center"><img src="https://dev-to-uploads.s3.amazonaws.com/i/b0atbnt7h9yxp07qevvi.png" width=450/></div>
 
 Os itens num Array são armazenados um ao lado do outro, como na imagem acima. Por mais óbvio que pareça ser, nem sempre vai ser a melhor escolha pro que se precisa.
 É como se você fosse fazer uma ~~lista~~ *array* de compras e escrevesse os itens numa folha pautada, numerando cada um deles (geralmente começando do 0). Seria bem mais fácil de achar um item que você quer, certo? Se quiser o sétimo item, é só bater o olho na folha e ele vai estar lá, no número 6.  
@@ -40,7 +40,7 @@ Por guardar um item ao lado do outro, você pode procurar instantaneamente por q
 
 ## Lista<a name="lista"></a>
 &nbsp;
-<div style="text-align:center"><img src="./img/list-in-memory.png" width=450/></div>
+<div style="text-align:center"><img src="https://dev-to-uploads.s3.amazonaws.com/i/uipxin4dhlrz8t3pdn25.png" width=450/></div>
 
 Numa lista, os itens são armazenados separadamente e cada um deles contém, além do valor armazenado, um "link" para o próximo item da lista.
 É como se agora você quisesse escrever a mesma *lista* de compras, mas dessa vez escrevesse cada item em um post-it. Agora se você quiser achar o sétimo item da sua lista, vai ter que passar de um em um, do 0 ao 6.
